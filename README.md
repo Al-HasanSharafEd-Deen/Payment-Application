@@ -1,6 +1,7 @@
 # Payment-Application
 ## for EgFWD Embedded Systems Professional Nanodegree Program
 
+###Brief
 Payment systems are now available everywhere and everyone interacts with these systems every day.
 
 There are different types of transactions you can make, SALE, REFUND, Pre-Authorization, and VOID.
@@ -12,16 +13,22 @@ VOID: this means canceling the transaction, e.g if the seller entered the wrong 
 
 I implemented the SALE transaction only by simulating the card, terminal(ATM), and the server.
 
-======================================================================
+=========================================
 
 ### Payment-Flowchart
 
 ![Payment-Flowchart](payment-flowchart.jpeg)
 
-======================================================================
+=========================================
 
-## I used:
+### I used:
 Visual Studio 2022
 
-======================================================================
+=========================================
 
+### check All Test cases and User stories
+check this link [Test cases and User Stories Videos and Screcnshots](https://drive.google.com/file/d/13LKguFEIPbjhAk6VQztwpHfZXzvjqHfI/view?usp=sharing)
+
+=========================================
+
+**Thanks for reading**
