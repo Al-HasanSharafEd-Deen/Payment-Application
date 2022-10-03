@@ -111,7 +111,7 @@ EN_serverError_t saveTransaction(ST_transaction_t* transData)
 {
 	/*return check*/
 	EN_serverError_t errorState = SERVER_OK;
-	if (transData->transState < 255)
+	if (sequenceNumber < 255)
 	{
 		transData->transactionSequenceNumber = sequenceNumber;
 		unit32_t count = transData->transactionSequenceNumber;
