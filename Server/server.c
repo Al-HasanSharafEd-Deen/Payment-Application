@@ -181,13 +181,20 @@ EN_transState_t recieveTransactionData(ST_transaction_t* transData)
 	
 }
 
+/*This function takes the sequence number of a transaction and returns the transaction data if found in the transactions DB
+ *If the sequence number is not found, then the transaction is not found, the function will return TRANSACTION_NOT_FOUND,
+ else return transaction data as well as SERVER_OK
+ */
 EN_serverError_t getTransaction(unit32_t transactionSequenceNumber, ST_transaction_t* transData)
 {
-	if (transactionsDB[transactionSequenceNumber].transactionSequenceNumber == 0) {
-		return TRANSACTION_NOT_FOUND;
+	for (unit8_t count = 0; count < sequenceNumber; count++)
+	{
+		if (transactionsDB[count].transactionSequenceNumber == transactionSequenceNumber)
+		{
+			*transData = transactionsDB[count];
+			return TERMINAL_OK;
+		}
 	}
-	else {
-		transData = &transactionsDB[transactionSequenceNumber];
-		return SERVER_OK;
-	}
+	printf("TRANSACTION NOT FOUND \n");
+	return TRANSACTION_NOT_FOUND;
 }
