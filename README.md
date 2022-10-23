@@ -1,7 +1,7 @@
 # Payment-Application
 ## for EgFWD Embedded Systems Professional Nanodegree Program
 
-###Brief
+### Brief
 Payment systems are now available everywhere and everyone interacts with these systems every day.
 
 There are different types of transactions you can make, SALE, REFUND, Pre-Authorization, and VOID.
